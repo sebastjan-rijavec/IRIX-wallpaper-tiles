@@ -1,6 +1,6 @@
-#!/usr/bin/env -S ./.venv/bin/python
-# Uses the project venv. Run as ./dim_wallpaper.py ... from this folder,
-# or explicitly: ./.venv/bin/python dim_wallpaper.py ...
+#!/usr/bin/env python3
+# Activate the project venv first (`source activate.sh`), then run:
+#   python src/dim_wallpaper.py <image> ...
 """Tweak an image's colors and set it as the GNOME desktop wallpaper.
 
 Adjusts brightness/contrast/color/sharpness (Pillow's ImageEnhance API),
