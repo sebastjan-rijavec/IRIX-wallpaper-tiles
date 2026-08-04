@@ -16,12 +16,12 @@ just activate it. Works in bash and zsh.
 ## Usage
 
 ```bash
-python src/dim_wallpaper.py "Tide Pool.png"                 # brightness 0.5 (default dim)
-python src/dim_wallpaper.py "Tide Pool.png" -b 0.7 -c 1.1   # brighter, more contrast
-python src/dim_wallpaper.py "Tide Pool.png" -s 1.8          # more vivid
-python src/dim_wallpaper.py "Tide Pool.png" -t "#204060"    # cool blue tint
-python src/dim_wallpaper.py "Tide Pool.png" -H 120          # rotate hues 120°
-python src/dim_wallpaper.py "Tide Pool.png" --no-wallpaper  # write file only
+python src/dim_wallpaper.py "tiles/Tide Pool.png"                 # brightness 0.5 (default dim)
+python src/dim_wallpaper.py "tiles/Tide Pool.png" -b 0.7 -c 1.1   # brighter, more contrast
+python src/dim_wallpaper.py "tiles/Tide Pool.png" -s 1.8          # more vivid
+python src/dim_wallpaper.py "tiles/Tide Pool.png" -t "#204060"    # cool blue tint
+python src/dim_wallpaper.py "tiles/Tide Pool.png" -H 120          # rotate hues 120°
+python src/dim_wallpaper.py "tiles/Tide Pool.png" --no-wallpaper  # write file only
 ```
 
 Output is written next to the source with a `_dimmed` suffix and set as

@@ -7,10 +7,10 @@ Adjusts brightness/contrast/color/sharpness (Pillow's ImageEnhance API),
 writes a copy with a "_dimmed" suffix, then points GNOME at it.
 
 Examples:
-    ./dim_wallpaper.py "Tide Pool.png"                 # brightness 0.5 (default dim)
-    ./dim_wallpaper.py "Tide Pool.png" -b 0.7 -c 1.1   # brighter, a touch more contrast
-    ./dim_wallpaper.py "Tide Pool.png" -s 0.6          # desaturate to 60%
-    ./dim_wallpaper.py "Tide Pool.png" --no-wallpaper  # just write the file
+    python src/dim_wallpaper.py "tiles/Tide Pool.png"                 # brightness 0.5 (default dim)
+    python src/dim_wallpaper.py "tiles/Tide Pool.png" -b 0.7 -c 1.1   # brighter, a touch more contrast
+    python src/dim_wallpaper.py "tiles/Tide Pool.png" -s 0.6          # desaturate to 60%
+    python src/dim_wallpaper.py "tiles/Tide Pool.png" --no-wallpaper  # just write the file
 """
 import argparse
 import subprocess
