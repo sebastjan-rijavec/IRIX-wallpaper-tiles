@@ -50,3 +50,20 @@ the wallpaper for both light and dark modes.
 
 All colour factors use Pillow's `ImageEnhance` API where `1.0` means
 unchanged. Transparency is preserved through tint and hue operations.
+
+## Automatic rotation
+
+My favourite recoloured tiles live in `Pool_Carousel/`, and I use **cron**
+to rotate through them automatically. `src/rotate_wallpaper.sh` picks a
+random image from that folder — never repeating the one shown last time —
+and sets it as the GNOME wallpaper.
+
+I schedule it hourly with a crontab entry like:
+
+```cron
+0 * * * * /path/to/IRIX-wallpaper-tiles/src/rotate_wallpaper.sh >> /path/to/IRIX-wallpaper-tiles/.wallpaper_rotate.log 2>&1
+```
+
+Adjust the schedule to taste (`*/10 * * * *` for every ten minutes, and so
+on). The script writes its last pick to `.wallpaper_last` and appends to
+`.wallpaper_rotate.log`; both are git-ignored.
