@@ -1,1 +1,5 @@
 .venv/
+
+# runtime state written by rotate_wallpaper.sh
+.wallpaper_last
+.wallpaper_rotate.log
