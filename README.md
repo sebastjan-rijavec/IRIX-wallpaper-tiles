@@ -1,7 +1,14 @@
 # IRIX wallpaper tiles
 
-Classic SGI IRIX pattern tiles (2560×2880) plus a small Python tool to
-recolour any of them and set the result as your GNOME desktop wallpaper.
+Classic SGI IRIX pattern tiles (2560×2880), custom-made for my **LG DualUp**
+monitor, plus a small Python tool to recolour any of them and set the result
+as your GNOME desktop wallpaper.
+
+## Credits
+
+The original IRIX tile artwork comes from
+[rann01/IRIX-tiles](https://github.com/rann01/IRIX-tiles); the tiles here
+have been resized and recoloured for the LG DualUp aspect ratio.
 
 ## Setup
 
