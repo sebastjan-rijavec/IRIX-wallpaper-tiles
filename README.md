@@ -67,3 +67,5 @@ I schedule it hourly with a crontab entry like:
 Adjust the schedule to taste (`*/10 * * * *` for every ten minutes, and so
 on). The script writes its last pick to `.wallpaper_last` and appends to
 `.wallpaper_rotate.log`; both are git-ignored.
+
+<!-- IRIX forever -->
